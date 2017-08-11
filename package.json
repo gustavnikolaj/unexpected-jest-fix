@@ -2,7 +2,7 @@
   "name": "unexpected-jest-fix",
   "version": "0.0.0",
   "description": "Temporary monkey patch for unexpected running in Jest.",
-  "main": "lib/unexpectedJestFix.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
     "unit-tests": "jest",
