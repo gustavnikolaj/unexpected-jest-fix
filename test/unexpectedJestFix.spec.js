@@ -13,3 +13,9 @@ it('should throw an error when passing more than two arguments', () => {
         'Expect takes at most one argument.'
     );
 });
+
+it('should export methods on expect', () => {
+    const { expect: fixedExpect } = unexpectedJestFix({}, jestExpect);
+
+    expect(Object.keys(fixedExpect), 'to equal', Object.keys(jestExpect));
+});
