@@ -1,0 +1,6 @@
+{
+  "name": "setupTestFrameworkScriptFile",
+  "jest": {
+    "setupTestFrameworkScriptFile": "../../"
+  }
+}

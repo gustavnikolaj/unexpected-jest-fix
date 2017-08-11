@@ -1,0 +1,29 @@
+{
+  "name": "unexpected-jest-fix",
+  "version": "0.0.0",
+  "description": "Temporary monkey patch for unexpected running in Jest.",
+  "main": "lib/unexpectedJestFix.js",
+  "scripts": {
+    "lint": "eslint .",
+    "unit-tests": "jest",
+    "integration-tests": "node ./integration-tests/runTests.js",
+    "test": "npm run lint && npm run unit-tests && npm run integration-tests"
+  },
+  "keywords": [
+    "unexpected"
+  ],
+  "author": "Gustav Nikolaj Olsen <gustavnikolaj@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-pretty-standard": "^0.2.2",
+    "jest": "^20.0.4",
+    "unexpected": "^10.33.1"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "integration-tests",
+      "node_modules"
+    ]
+  }
+}
